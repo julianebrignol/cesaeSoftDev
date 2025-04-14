@@ -6,113 +6,103 @@
  <link rel="stylesheet" href="style.css">
  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 <!-- the beginning where i click on the sections-->
-<header class="rhode-header">
+<header class="ju-header">
   <nav class="nav-left">
-    <a href="#">SHOP</a>
-    <a href="#">ABOUT</a>
-    <a href="#">FUTURES</a>
+    <a href="#about">ABOUT</a>
+    <a href="#more">MORE</a>
+    <a href="#music">MUSIC</a>
   </nav>
 
-  <div class="logo">rhode</div>
+  <div class="logo">Juliane Brignol</div>
 
   <nav class="nav-right">
-    <a href="#">SEARCH</a>
-    <a href="#">ACCOUNT</a>
-    <a href="#">CART (0)</a>
+    <a href="#professional">PROFESSIONAL</a>
+    <a href="#career">CAREER</a>
+    <a href="#contact">CONTACT</a>
   </nav>
 </header>
 
-    <nav>
-      <a href="#about">About</a> |
-      <a href="#more">More</a> |
-      <a href="#music">Music</a> |
-      <a href="#contact">Contact</a> |
-      <a href="#career">Career</a>
-    </nav>
-  </header>
-
   <main>
     <!-- section about me-->
-    <section id="about">
+    <section id="about" class="about-section">
       <h2 style="color: rgb(243, 152, 211);">About</h2>
       <p>My name is Juliane</p>
       <p>I am 24 years old</p>
       <p>I am from Brasil, Rio Grande do Sul</p>
-      <img src="juju.jpeg" alt="Juliane photo" width="200" height="200">
+      <img src="juju.jpeg" alt="Juliane photo" width="400" height="450">
     </section>
+    
     <!-- section about more details for me-->
-    <section id="more">
-      <h2 style="color: rgb(243, 152, 211);">More about me</h2>
-      <ol>
-        <li>I love fashion and makeup</li>
-        <li>I love to travel</li>
-        <li>I have a lot of interest in programming</li>
-        <li>I'm very curious</li>
-        <li>I'm a perfectionist</li>
-      </ol>
-    </section>
-    <!-- section about my profisional contact-->
-    <section>
-      <h2 style="color: rgb(243, 152, 211);">My professional contact</h2>
-      <p>
-        <a href="https://github.com/julianebrignol" target="_blank">GitHub</a> |
-        <a href="https://www.linkedin.com/in/juliane-müller-brignol/" target="_blank">LinkedIn</a>
-      </p>
-    </section>
+      <section id="more" class="side-card">
+        <h2 style="color: rgb(243, 152, 211);">More about me</h2>
+        <ol>
+          <li>I love fashion and makeup</li>
+          <li>I love to travel</li>
+          <li>I have a lot of interest in programming</li>
+          <li>I'm very curious</li>
+          <li>I'm a perfectionist</li>
+        </ol>
+      </section>
+    
+      <!-- section about professional-->
+      <section id="professional" class="side-card">
+        <h2 style="color: rgb(243, 152, 211);">My professional contact</h2>
+        <p>
+          <a href="https://github.com/julianebrignol" target="_blank">GitHub</a> |
+          <a href="https://www.linkedin.com/in/juliane-müller-brignol/" target="_blank">LinkedIn</a>
+        </p>
+      </section>
+    </div>
+    
     <!-- section about music-->
-    <section id="music">
-      <h2 style="color: rgb(243, 152, 211);">About music</h2>
-      <p>I love to listen to house music</p>
-      <p>My favorite DJ is Chris Stussy</p>
-      <a href="https://www.youtube.com/watch?v=2v0gk4j1x8E" target="_blank">Chris Stussy – The One</a>
-    </section>
+      <section id="music" class="side-card">
+        <h2 style="color: rgb(243, 152, 211);">About music</h2>
+        <p>I love to listen to house music</p>
+        <p>My favorite DJ is Chris Stussy</p>
+        <a href="https://www.youtube.com/watch?v=2v0gk4j1x8E" target="_blank">Chris Stussy – The One</a>
+      </section>
+
+    <!-- section about my career-->
+    <section id="career" class="side-card">
+      <h2>professional career</h2>
+      <div class="modern-table">
+        <div class="row">
+          <div class="label">Graduation</div>
+          <div class="value">Hotel Management</div>
+        </div>
+        <div class="row">
+          <div class="label">Work experience</div>
+          <div class="value">Renaissance Hotels (2023–2024)</div>
+        </div>
+      </div>
+    </section>    
+  
     <!-- section about contact-->
-    <section id="contact">
-      <h2 style="color: rgb(243, 152, 211);">Contact me</h2>
+    <section id="contact" class="side-card">
+      <h2>Contact me</h2>
       <form action="processa.php" method="post">
-        <table>
-          <tr>
-            <td><label for="name">Name:</label></td>
-            <td><input type="text" id="name" name="name" required></td>
-          </tr>
-          <tr>
-            <td><label for="email">Email:</label></td>
-            <td><input type="email" id="email" name="email" required></td>
-          </tr>
-          <tr>
-            <td><label for="message">Message:</label></td>
-            <td><textarea id="message" name="message" required></textarea></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><input type="submit" value="Send"></td>
-          </tr>
-        </table>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+    
+        <input type="submit" value="Send">
       </form>
-    </section>
-    <!-- my section about my career-->
-    <section id="career">
-      <h2 style="color: rgb(243, 152, 211);">Professional Career</h2>
-      <table border="1" cellpadding="8" cellspacing="0">
-        <tr>
-          <td><strong>Graduation:</strong></td>
-          <td>Hotel Management</td>
-        </tr>
-        <tr>
-          <td><strong>Work experience:</strong></td>
-          <td>Renaissance Hotels (2023–2024)</td>
-        </tr>
-      </table>
     </section>
 
   </main>
   <!-- for finsh the footer-->
-  <footer>
-    <p style="color: rgb(181, 90, 128);">Made by Juliane Brignol – CESAE 2025</p>
-  </footer>
+ <footer>
+  <p>Made by Juliane Brignol – CESAE 2025</p>
+</footer>
 
 </body>
 </html>
