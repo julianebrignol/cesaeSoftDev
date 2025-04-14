@@ -2,14 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: font-family: 'Outfit', sans-serif;
     color: #4b4f4d;
     background-color: #bcb3a3;
   }
   
   h1 {
     font-family: 'Silkscreen', sans-serif;
-    color: rgb(234, 68, 151);
-  }
-  
+    color: #5E5B56;
+  }  
   
